@@ -1,49 +1,58 @@
-* {
-    margin: 0;
+*{
     padding: 0;
+    margin: 0;
 }
 
 body {
     font-size: 16;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-    background: #CFE0BC;
+    background: #fff;
 }
 
-#navegacao {
+#navbar {
     background: #99CD85;
     border-bottom: 1px solid #d8d8d8;
-    height: 45px;
+    height: 55px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.9;
 }
 
-#area {
-    width: 720px;
-    margin: 0 auto;
+.menu{
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
 }
 
 #area-principal {
-    width: 720px;
+    max-width: 720px;
     margin: 10px auto 10px auto;
 }
 
+.ods {
+    background: #4C9F38;
+    margin-top: 55px;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+}
 
-#logo {
-    float: left;
+.ong {
+    background: rgb(45, 170, 160);
+    padding: 10px 10px 10px 10px;
     color: white;
 }
 
-#menu {
-    justify-content: right;
-    padding: 12px 0;
-}
-
-#postagem {
-    background: #fff; 
-    padding: 10px; 
-    margin-bottom: 10px;
-}
-
-h2 {
-    color: #b9c941
+h1 {
+    color: #ffffff;
+    font-size: 35px;
+    text-align: center;
+    margin: 15px;
+    padding: 15px 15px;
 }
 
 a {
@@ -64,30 +73,37 @@ a:hover {
     background: #4c9f38;
 }
 
-a:active {
-    color: #535353;
+footer{
+    background: black;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
 }
 
-.verde {
-    color: #b9c941;
+.responsiva{
+    width: 100%;
+    height: auto;
+    width: 100%;
 }
 
-.data-postagem {
-    font-size: 14px; 
-    border-bottom: 1px solid #f4f4f4;
-    display: block;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+.container {
+	max-width: 720px;
+	margin: 0 auto;
+	display: flex; 
 }
 
-.img-postagem {
-    float: left;
-    margin: 0 10px 5px 0;
+.stretch {
+	align-items: stretch;
 }
 
-.postado {
-    border-left: 5px solid #8d8d8d;
-    padding-left: 5px;
-    display: block;
-    margin-top: 10px;
+.item {
+	flex: 1;
+	margin: 5px;
+	padding: 0 10px;
+	
+	color: rgb(40, 204, 18);
+	text-align: center;
+	font-size: 1.5em;
 }
+
