@@ -11,7 +11,6 @@ body {
 
 #navbar {
     background: #000000;
-    border-bottom: 1px solid #d8d8d8;
     height: 60px;
     position: fixed;
     top: 0;
@@ -29,12 +28,15 @@ body {
 }
 
 header {
-    background-image: url(/Site-ODS-v2/img/ods2-edit.jpg);
+    background-image: url(/Site-ODS-v2/img/ods3-edit.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @font-face {
@@ -44,24 +46,30 @@ header {
     font-style: normal;
 }
 
+
+.header-hero{
+    padding-left: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .frase {
     font-family: 'DancingScript', 'Poppins', sans-serif;
-    font-size: 58px;
-    transform: translate(39%, 570%);
+    font-size: 3.5rem;
     color: white;
+    width: fit-content;
 }
 
 .botao-link {
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
-    display: inline-block;
     padding: 10px 20px;
     background-color: #4c9f38;
-    text-decoration: none;
     border: none;
     border-radius: 25px;
     cursor: pointer;
-    transform: translate(480%, 980%);
 }
 
 .botao-link:hover {
@@ -123,7 +131,7 @@ a:visited {
 }
 
 a:hover {
-    color: #4c9f38;
+    color: #05db3b;
 }
 
 footer{
@@ -176,4 +184,5 @@ footer{
 .stretch {
 	align-items: stretch;
 }
+
 
