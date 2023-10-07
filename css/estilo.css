@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
@@ -19,7 +19,7 @@ body {
     opacity: 0.9;
 }
 
-.menu{
+.menu {
     float: none;
     position: absolute;
     top: 50%;
@@ -72,7 +72,7 @@ a:hover {
     color: #4c9f38;
 }
 
-footer{
+footer {
     background: black;
     padding: 15px;
     text-align: center;
@@ -80,29 +80,28 @@ footer{
     text-transform: uppercase;
 }
 
-.responsiva{
+.responsiva {
     width: 100%;
     height: auto;
     width: 100%;
 }
 
 .container {
-	max-width: 720px;
-	margin: 0 auto;
-	display: flex; 
+    max-width: 720px;
+    margin: 0 auto;
+    display: flex;
 }
 
 .stretch {
-	align-items: stretch;
+    align-items: stretch;
 }
 
 .item {
-	flex: 1;
-	margin: 5px;
-	padding: 0 10px;
-	
-	color: rgb(40, 204, 18);
-	text-align: center;
-	font-size: 1.5em;
-}
+    flex: 1;
+    margin: 5px;
+    padding: 0 10px;
 
+    color: rgb(40, 204, 18);
+    text-align: center;
+    font-size: 1.5em;
+}
