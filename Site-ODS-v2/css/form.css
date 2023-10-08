@@ -98,6 +98,14 @@ body {
     padding: 20px;
 }
 
+.right-side img {
+    display: block;
+    margin: 0 auto;
+    max-width: 25%;
+    max-height: 25%;
+    padding: 20px;
+}
+
 form input[type="text"],
 form input[type="email"],
 form input[type="number"],
