@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    background-color: #f0f0f0;
+    background-color: #ebe8e8;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-weight: 500;
 }
@@ -13,7 +13,7 @@ body {
 .header {
     text-align: center;
     padding: 0%;
-    background-color: #f0f0f0;
+    background-color: #ebe8e8;
     height: 500px;
     position: relative;
 }
@@ -38,12 +38,10 @@ body {
 }
 
 .container-formulario-doacao {
-    position: absolute;
     top: 55%;
     left: 60%;
-
     background-color: rgba(153, 205, 133, 0.5);
-    padding: 60px;
+    padding: 20px;
     border-radius: 2cm;
 }
 
@@ -51,6 +49,8 @@ body {
 .content {
     display: flex;
     flex-direction: row;
+    margin-left: 300px;
+    margin-right: 300px;
 }
 
 .left-side {
@@ -64,7 +64,7 @@ body {
     flex: 50%;
     padding: 30px;
     background-color: white;
-    font-size: 16;
+    font-size: 30;
     text-align: center;
 }
 
@@ -116,16 +116,21 @@ form input[type="date"] {
 label {
     display: block;
     margin-bottom: 0.5rem;
-    font-size: 0.75rem;
+    font-size: medium;
+    margin-top: 0.5rem;
 }
 
 .container-ongs input[type="radio"],
 .container-ongs label,
 .container-doacoes input[type="radio"],
-.container-doacoes label {
+.container-doacoes label,
+.container-formulario-politicas input[type="radio"],
+.container-formulario-politicas label {
     display: inline-block;
     vertical-align: middle;
     margin-right: 10px;
+    margin-top: 10px;
+    font-size: medium;
 }
 
 .botao-doar {

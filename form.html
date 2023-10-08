@@ -34,23 +34,24 @@
         </div>
         <div class="right-side">
             <div class="container-formulario-doacao">
-                <h2>FAÇA UMA DOAÇÃO!</h2>
-                <h3>ESCOLHA A ONG:</h3>
+                <h1>FAÇA UMA DOAÇÃO!</h1>
+                <h2>ESCOLHA A ONG:</h2>
                 <div class="container-ongs">
-                    <input type="radio" name="size" id="nucleoBatuira" checked="checked">
+                    <input type="radio" name="size" id="nucleoBatuira">
                     <label for="nucleoBatuira">Núcleo Batuíra</label><br>
-                    <input type="radio" name="size" id="larVovosEVovozinhas" checked="checked">
+                    <input type="radio" name="size" id="larVovosEVovozinhas">
                     <label for="larVovosEVovozinhas">Lar dos Vovôs e Vovózinhas</label><br>
-                    <input type="radio" name="size" id="grupoOrar" checked="checked">
+                    <input type="radio" name="size" id="grupoOrar">
                     <label for="grupoOrar">Grupo Orar</label><br>
                 </div>
                 <h3>ESCOLHA O TIPO DE DOAÇÃO: </h3>
                 <div class="container-doacoes">
-                    <input type="radio" name="size" id="doacao1" checked="checked">
+                    <input type="checkbox" name="size" id="doacao1">
                     <label for="doacao1">Fralda Geriátrica</label><br>
-                    <input type="radio" name="size" id="doacao2" checked="checked">
+                    <input type="checkbox" name="size" id="doacao2">
                     <label for="doacao2">Alimento Não Perecível</label><br>
                 </div>
+
                 <div class="input-container name">
                     <label for="fname">nome</label>
                     <input id="name" name="fname" type="text" style="width: 300px;">
@@ -94,6 +95,18 @@
                 <div class="cidade">
                     <label for="cidade">cidade</label>
                     <input id="cidade" name="cidade" type="text" style="width: 300px;">
+                </div>
+                <div class="container-formulario-politicas">
+                    <input type="checkbox" name="size" id="politicaPrivacidade">
+                    <label for="politicaPrivacidade">Li e aceito a <a
+                            href="url_da_politica_de_privacidade.html">Política de Privacidade</a> e os <a
+                            href="url_dos_termos_de_uso.html">Termos
+                            de
+                            Uso</a></label><br>
+                    <input type="checkbox" name="size" id="notificacoes">
+                    <label for="notificacoes1">Aceito ser noficado sobre a minha doação</label><br>
+                    <input type="checkbox" name="size" id="notificacoes2">
+                    <label for="notificacoes2"> Aceito receber notificações sobre _nome_<br></label>
                 </div>
                 <button class="botao-doar">Doar</button>
             </div>
