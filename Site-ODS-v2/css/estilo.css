@@ -29,6 +29,23 @@ body {
     width: 40px;
 }
 
+a {
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: #05db3b;
+}
+
 header {
     background-image: url(/Site-ODS-v2/img/ods3-edit.jpg);
     background-size: cover;
@@ -123,23 +140,6 @@ p{
     padding-bottom: 20px;
 }
 
-a {
-    text-decoration: none;
-    padding: 5px 10px;
-}
-
-a:link {
-    color: white;
-}
-
-a:visited {
-    color: white;
-}
-
-a:hover {
-    color: #05db3b;
-}
-
 footer{
     font-size: 10px;
     background: black;
@@ -200,14 +200,14 @@ footer{
     text-align: center;
   }
   
-  ul {
+ul {
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
-  }
+}
   
-  .lista-centralizada li {
-    margin: 0 10px; /* Espaçamento entre os itens */
-  }
+.lista-centralizada li {
+    margin: 0 10px;
+}
   
