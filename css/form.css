@@ -1,7 +1,13 @@
-body,
-html {
-    margin: 0;
+*{
     padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'DancingScript';
+    src: url(/fonts/DancingScript-VariableFont_wght.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
@@ -22,14 +28,6 @@ header {
     padding: 0%;
     height: 658px;
     position:relative;
-    border: solid 2px black;
-}
-
-@font-face {
-    font-family: 'DancingScript';
-    src: url(/fonts/DancingScript-VariableFont_wght.ttf) format('truetype');
-    font-weight: normal;
-    font-style: normal;
 }
 
 .header-text {
@@ -56,25 +54,31 @@ header {
     display: flex; 
 }
 
-.logo {
-    width: 40px;
-    display: block !important;
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
-a {
+.menu img {
+    width: 40px;
+}
+
+header a {
     text-decoration: none;
     padding: 5px 10px;
 }
 
-a:link {
+header a:link {
     color: white;
 }
 
-a:visited {
+header a:visited {
     color: white;
 }
 
-a:hover {
+header a:hover {
     color: #05db3b;
 }
 
@@ -86,7 +90,7 @@ a:hover {
 	max-width: 900px;
 	margin: auto;
 	display: flex; 
-    border: solid 2px black;
+    height: 100%;
 }
 
 .stretch {
@@ -107,7 +111,6 @@ a:hover {
     background-color: rgba(153, 205, 133, 0.5);
     padding: 30px;
     border-radius: 2cm;
-    border: solid 2px blue;
 }
 
 .form img {
@@ -122,7 +125,7 @@ a:hover {
     padding: 20px;
     background-color: #99CD85;
     font-size: 16;
-    border: solid 2px red;
+    height: 97em;
 }
 
 .info h2 {
@@ -148,11 +151,9 @@ a:hover {
     display: block;
     margin: 0 auto;
     max-width: 100%;
-    max-height: 100%;
+    max-height: auto;
     padding: 20px;
 }
-
-
 
 form input[type="text"],
 form input[type="email"],

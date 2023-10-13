@@ -3,10 +3,29 @@
     margin: 0;
 }
 
+@font-face {
+    font-family: 'DancingScript';
+    src: url(/fonts/DancingScript-VariableFont_wght.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     font-size: 16;
     font-family: 'Poppins', sans-serif;
     background: #ebe8e8;
+}
+
+header {
+    background-image: url(/img/ods3-edit.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #navbar {
@@ -25,52 +44,32 @@ body {
     display: flex; 
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
 .menu img{
     width: 40px;
 }
 
-a {
+header a {
     text-decoration: none;
     padding: 5px 10px;
 }
 
-a:link {
+header a:link {
     color: white;
 }
 
-a:visited {
+header a:visited {
     color: white;
 }
 
-a:hover {
+header a:hover {
     color: #05db3b;
-}
-
-header {
-    background-image: url(/img/ods3-edit.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@font-face {
-    font-family: 'DancingScript';
-    src: url(/fonts/DancingScript-VariableFont_wght.ttf) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-.header-hero{
-    padding-left: 2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 .frase {
@@ -78,6 +77,14 @@ header {
     font-size: 3.2rem;
     color: white;
     width: fit-content;
+}
+
+.header-botao{
+    padding-left: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .botao-link {
@@ -92,7 +99,7 @@ header {
 
 .botao-link:hover {
     background-color: #06d1c7;
-    color: #000000;
+    color: white;
 }
 
 .ong {
@@ -187,21 +194,31 @@ footer{
 	font-size: 15px;
 }
 
+.item a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+.item a:link {
+    color: none;
+}
+
+.item a:visited {
+    color: none;
+}
+
+.item a:hover {
+    color: none;
+}
+
 .stretch {
 	align-items: stretch;
 }
 
 .lista-centralizada {
     text-align: center;
-  }
-  
-ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
 }
-  
+
 .lista-centralizada li {
     margin: 0 10px;
 }
