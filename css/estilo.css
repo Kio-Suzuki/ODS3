@@ -47,7 +47,7 @@ a:hover {
 }
 
 header {
-    background-image: url(/Site-ODS-v2/img/ods3-edit.jpg);
+    background-image: url(/img/ods3-edit.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -60,7 +60,7 @@ header {
 
 @font-face {
     font-family: 'DancingScript';
-    src: url(/Site-ODS-v2/fonts/DancingScript-VariableFont_wght.ttf) format('truetype');
+    src: url(/fonts/DancingScript-VariableFont_wght.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }

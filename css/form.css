@@ -14,18 +14,20 @@ body {
     align-content: center;
 }
 
-.header {
-    background-image: url(/Site-ODS-v2/img/painel1-foto1-w2.png);
+header {
+    background-image: url(/img/painel1-foto1-w2.png);
+    background-size: cover;
+    background-position: center;
     text-align: center;
     padding: 0%;
-    background-color: #ebe8e8;
-    height: 660px;
-    position: relative;
+    height: 658px;
+    position:relative;
+    border: solid 2px black;
 }
 
 @font-face {
     font-family: 'DancingScript';
-    src: url(/Site-ODS-v2/fonts/DancingScript-VariableFont_wght.ttf) format('truetype');
+    src: url(/fonts/DancingScript-VariableFont_wght.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -80,61 +82,69 @@ a:hover {
     font-family: 'DancingScript', 'Poppins', sans-serif;
 }
 
-.container-formulario-doacao {
+.container {
+	max-width: 900px;
+	margin: auto;
+	display: flex; 
+    border: solid 2px black;
+}
+
+.stretch {
+	align-items: stretch;
+}
+
+.item {
+	flex: 1;
+    margin: 2px;
+	color: black;
+	text-align: center;
+	font-size: 15px;
+}
+
+.form {
     top: 55%;
     left: 60%;
     background-color: rgba(153, 205, 133, 0.5);
-    padding: 20px;
-    border-radius: 2cm;
-}
-
-
-.content {
-    display: flex;
-    flex-direction: row;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 70%;
-}
-
-.left-side {
-    flex: 50%;
     padding: 30px;
+    border-radius: 2cm;
+    border: solid 2px blue;
+}
+
+.form img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+.info {
+    padding: 20px;
     background-color: #99CD85;
     font-size: 16;
+    border: solid 2px red;
 }
 
-.right-side {
-    flex: 50%;
-    padding: 30px;
-    background-color: white;
-    font-size: 30;
-    text-align: center;
-}
-
-.left-side h2 {
+.info h2 {
     color: #ffffff;
     font-size: 35px;
     text-align: center;
-    margin: 15px;
-    padding: 15px 15px;
+    
 }
 
-.left-side h1 {
+.info h1 {
     color: #ffffff;
     font-size: 40px;
     text-align: center;
-    margin: auto;
-    padding: 15px 15px;
+    
 }
 
-.left-side p {
+.info p {
     text-align: center;
-    margin: auto;
-    padding: 15px 15px;
+    
 }
 
-.left-side img {
+.info img {
     display: block;
     margin: 0 auto;
     max-width: 100%;
@@ -142,13 +152,7 @@ a:hover {
     padding: 20px;
 }
 
-.right-side img {
-    display: block;
-    margin: 0 auto;
-    max-width: 25%;
-    max-height: 25%;
-    padding: 20px;
-}
+
 
 form input[type="text"],
 form input[type="email"],
@@ -193,6 +197,7 @@ label {
     border: none;
     cursor: pointer;
     margin-top: 20px;
+    border-radius: 25px;
 }
 
 @media (min-width: 1200px) {
@@ -217,3 +222,4 @@ footer{
     color: white;
     text-transform: uppercase;
 }
+
