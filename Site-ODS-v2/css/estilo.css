@@ -155,7 +155,7 @@ footer{
 }
 
 .container {
-	max-width: 720px;
+	max-width: 1000px;
 	margin: 30px auto;
 	display: flex; 
 }
@@ -176,11 +176,6 @@ footer{
     margin-right: auto;
     max-width: 70%;
     height: auto;
-}
-
-.container {
-	max-width: 1200px;
-	display: flex; 
 }
 
 .item {

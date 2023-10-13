@@ -1,117 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/form.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="form.css" />
+    <title>Doação TESTE</title>
 </head>
 
 <body>
-    <div class="header">
-        <img src="img/painel1-foto1.png" alt="website header">
+    <header>
+        <div id="navbar">
+            <div class="menu">
+                <img class="logo" src="/Site-ODS-v2/img/logo.png" alt="Conexão Solidária logo">
+                <a href="index.html">Home</a>
+                <a href="index.html#instituições">Instituições</a>
+                <a href="form.html">Doar</a>
+                <a href="index.html#ods3">ODS 3</a>
+                <a href="index.html#sobre">Sobre</a>
+                <a href="index.html#contato">Contato</a>
+            </div>   
+        </div>
+
         <div class="header-text">
             <h1>Faça a Diferença Agora</h1>
             <p>Cada doação conta. Junte-se a nós e seja parte desta mudança extraordinária!</p>
         </div>
+    </header>
 
-    </div>
-    <div class="content">
-        <div class="left-side">
-            <h1>VOCÊ SABIA?</h1>
-            <h2>BENEFÍCIOS FISCAIS</h2>
-            <p> Em muitos lugares, as doações para organizações sem fins lucrativos são dedutíveis de impostos!<br></p>
-            <h2>MELHORE VIDAS</h2>
-            <p>Doar para ONGs como o Lar das Vovozinhas ou o Instituto Batuíra tem um impacto direto na vida das
-                pessoasque mais precisam<br></p>
-            <p>Sua doação contribui para a construção de um futuro melhor para a comunidade atendida pelas ONG's.<br>
-            </p>
-            <img src="img/painel1-foto2.png" alt="ajudar">
-            <h2>SE AJUDE AO AJUDAR</h2>
-            <p>Saber que você está fazendo a diferença na vida de alguém e ajudando a construir um mundo mais justo pode
-                ser extremamente gratificante.</p>
-        </div>
-        <div class="right-side">
-            <div class="container-formulario-doacao">
-                <h1>FAÇA UMA DOAÇÃO!</h2>
-                    <h3>ESCOLHA A ONG:</h3>
-                    <div class="container-ongs">
-                        <input type="radio" name="size" id="nucleoBatuira">
-                        <label for="nucleoBatuira">Núcleo Batuíra</label><br>
-                        <input type="radio" name="size" id="larVovosEVovozinhas">
-                        <label for="larVovosEVovozinhas">Lar dos Vovôs e Vovózinhas</label><br>
-                        <input type="radio" name="size" id="grupoOrar">
-                        <label for="grupoOrar">Grupo Orar</label><br>
-                    </div>
-                    <h3>ESCOLHA O TIPO DE DOAÇÃO: </h3>
-                    <div class="container-doacoes">
-                        <input type="checkbox" name="size" id="doacao1">
-                        <label for="doacao1">Fralda Geriátrica</label><br>
-                        <input type="checkbox" name="size" id="doacao2">
-                        <label for="doacao2">Alimento Não Perecível</label><br>
-                    </div>
+    <section class="container stretch">
 
-                    <div class="input-container name">
-                        <label for="fname">nome</label>
-                        <input id="name" name="fname" type="text" style="width: 300px;">
-                    </div>
-                    <div class="input-container cpf">
-                        <label for="cpf">cpf</label>
-                        <input id="cpf" name="cpf" type="number" style="width: 300px;">
-                    </div>
-                    <div class="input-container email">
-                        <label for="femail">e-mail</label>
-                        <input id="email" name="email" type="email" style="width: 300px;">
-                    </div>
-                    <div class="input-container data">
-                        <label for="data">data de nascimento</label>
-                        <input id="data" name="data" type="date" style="width: 300px;">
-                    </div>
-                    <div class="input-container cep">
-                        <label for="cep">cep</label>
-                        <input for="cep" name="cep" type="number" style="width: 300px;">
-                    </div>
-                    <div class="input-container rua">
-                        <label for="rua">rua</label>
-                        <input id="rua" name="rua" type="text" style="width: 300px;">
-                    </div>
-                    <div class="input-container numero">
-                        <label for="numero">número</label>
-                        <input id="numero" name="numero" type="number" style="width: 300px;">
-                    </div>
-                    <div class="input-container complemento">
-                        <label for="complemento">complemento</label>
-                        <input id="complemento" name="complemento" type="text" style="width: 300px;">
-                    </div>
-                    <div class="estado">
-                        <label for="estado">Estado</label>
-                        <input id="estado" name="estado" type="text" style="width: 300px;">
-                    </div>
-                    <div class="bairro">
-                        <label for="bairro">bairro</label>
-                        <input id="bairro" name="bairro" type="text" style="width: 300px;">
-                    </div>
-                    <div class="cidade">
-                        <label for="cidade">cidade</label>
-                        <input id="cidade" name="cidade" type="text" style="width: 300px;">
-                    </div>
-                    <div class="container-formulario-politicas">
-                        <input type="checkbox" name="size" id="politicaPrivacidade">
-                        <label for="politicaPrivacidade">Li e aceito a <a
-                                href="url_da_politica_de_privacidade.html">Política de Privacidade</a> e os <a
-                                href="url_dos_termos_de_uso.html">Termos
-                                de
-                                Uso</a></label><br>
-                        <input type="checkbox" name="size" id="notificacoes">
-                        <label for="notificacoes1">Aceito ser noficado sobre a minha doação</label><br>
-                        <input type="checkbox" name="size" id="notificacoes2">
-                        <label for="notificacoes2"> Aceito receber notificações sobre _nome_<br></label>
-                    </div>
-                    <button class="botao-doar">Doar</button>
+        <div class="item">
+            <div class="info"> 
+                <h1>VOCÊ SABIA?</h1>
+                <h2>BENEFÍCIOS FISCAIS</h2>
+                <p> Em muitos lugares, as doações para organizações sem fins lucrativos são dedutíveis de impostos!<br></p>
+                <h2>MELHORE VIDAS</h2>
+                <p>Doar para ONGs como o Lar das Vovozinhas ou o Instituto Batuíra tem um impacto direto na vida das
+                    pessoasque mais precisam<br></p>
+                <p>Sua doação contribui para a construção de um futuro melhor para a comunidade atendida pelas ONG's.<br>
+                </p>
+                <img src="painel1-foto2.png" alt="ajudar">
+                <h2>SE AJUDE AO AJUDAR</h2>
+                <p>Saber que você está fazendo a diferença na vida de alguém e ajudando a construir um mundo mais justo pode
+                    ser extremamente gratificante.</p>
+                <h2>#ÉTempoDeCuidar dos que cuidaram de nós.</h2>
+                <p>Juntos, podemos fazer a diferença nas vidas das pessoas.<br></p>
+                <p> Faça parte desta corrente de solidariedade<br></p>
+                <p> Ajude-nos a construir um mundo melhor para todos<br></p>
+                <h2>Transparência e prestação de compras do Conexão Solidária</h2>
             </div>
         </div>
-    </div>
+
+        <div class="item">
+            <div class="form">
+                <h1>FAÇA UMA DOAÇÃO!</h1>
+                <h2>ESCOLHA A ONG:</h2>
+                <div class="container-ongs">
+                    <input type="radio" name="size" id="nucleoBatuira">
+                    <label for="nucleoBatuira">Núcleo Batuíra</label><br>
+                    <input type="radio" name="size" id="larVovosEVovozinhas">
+                    <label for="larVovosEVovozinhas">Lar dos Vovôs e Vovózinhas</label><br>
+                    <input type="radio" name="size" id="grupoOrar">
+                    <label for="grupoOrar">Grupo Orar</label><br>
+                </div>
+                <h3>ESCOLHA O TIPO DE DOAÇÃO: </h3>
+                <div class="container-doacoes">
+                    <input type="checkbox" name="size" id="doacao1">
+                    <label for="doacao1">Fralda Geriátrica</label><br>
+                    <input type="checkbox" name="size" id="doacao2">
+                    <label for="doacao2">Alimento Não Perecível</label><br>
+                </div>
+
+                <div class="input-container name">
+                    <label for="fname">nome</label>
+                    <input id="name" name="fname" type="text" style="width: 100%">
+                </div>
+                <div class="input-container cpf">
+                    <label for="cpf">cpf</label>
+                    <input id="cpf" name="cpf" type="number" style="width: 100%">
+                </div>
+                <div class="input-container email">
+                    <label for="femail">e-mail</label>
+                    <input id="email" name="email" type="email" style="width: 100%">
+                </div>
+                <div class="input-container data">
+                    <label for="data">data de nascimento</label>
+                    <input id="data" name="data" type="date" style="width: 100%">
+                </div>
+                <div class="input-container cep">
+                    <label for="cep">cep</label>
+                    <input for="cep" name="cep" type="number" style="width: 100%">
+                </div>
+                <div class="input-container rua">
+                    <label for="rua">rua</label>
+                    <input id="rua" name="rua" type="text" style="width: 100%">
+                </div>
+                <div class="input-container numero">
+                    <label for="numero">número</label>
+                    <input id="numero" name="numero" type="number" style="width: 100%">
+                </div>
+                <div class="input-container complemento">
+                    <label for="complemento">complemento</label>
+                    <input id="complemento" name="complemento" type="text" style="width: 100%">
+                </div>
+                <div class="estado">
+                    <label for="estado">Estado</label>
+                    <input id="estado" name="estado" type="text" style="width: 100%">
+                </div>
+                <div class="bairro">
+                    <label for="bairro">bairro</label>
+                    <input id="bairro" name="bairro" type="text" style="width: 100%">
+                </div>
+                <div class="cidade">
+                    <label for="cidade">cidade</label>
+                    <input id="cidade" name="cidade" type="text" style="width: 100%">
+                </div>
+                <img src="/painel1-foto3(1).png">
+                <div class="numeroCartao">
+                    <label for="numeroCartao">número do cartão</label>
+                    <input id="numeroCartao" name="numeroCartao" type="text" style="width: 100%">
+                    <div class="cvv">
+                        <label for="cvv">cvv</label>
+                        <input id="cvv" name="cvv" type="cvv" style="width: 100%">
+                    </div>
+                    <div class="nomeCartao">
+                        <label for="nomeCartao">nome como está no cartão</label>
+                        <input id="nomeCartao" name="nomeCartao" type="nomeCartao" style="width: 100%">
+                    </div>
+                    <div class="validadeCartao">
+                        <labeL for="validadeCartao">validade do cartão</labeL>
+                        <input id="validadeCartao" name="validadeCartao" type="validadeCartao" style="width: 100%">
+                    </div>
+                </div>
+                <div class="container-formulario-politicas">
+                    <input type="checkbox" name="size" id="politicaPrivacidade">
+                    <label for="politicaPrivacidade">Li e aceito a <a
+                            href="url_da_politica_de_privacidade.html">Política de Privacidade</a> e os <a
+                            href="url_dos_termos_de_uso.html">Termos
+                            de
+                            Uso</a></label><br>
+                    <input type="checkbox" name="size" id="notificacoes">
+                    <label for="notificacoes1">Aceito ser noficado sobre a minha doação</label><br>
+                    <input type="checkbox" name="size" id="notificacoes2">
+                    <label for="notificacoes2"> Aceito receber notificações sobre o Conexão Solidária<br></label>
+                </div>
+                <button class="botao-doar">Doar</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © Conexão Solidária 2023 - Todos os direitos reservados
+    </footer>
 </body>
 
 </html>
