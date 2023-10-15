@@ -220,7 +220,6 @@ label {
 }
 
 .validadeCartao label, select {
-    float: left;
     margin-right: 10px; 
 }
 
@@ -232,7 +231,11 @@ select[name="mes"] {
     margin-top: 7px; 
 }
 select {
-    margin-bottom: 10px; /* Ajuste o valor conforme necessário */
+    margin-bottom: 10px; 
+}
+
+.validadeCartao p{
+    margin-top: 10px;
 }
 
 footer{
