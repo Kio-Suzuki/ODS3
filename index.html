@@ -3,74 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ODS 3 - Saúde e Bem-Estar</title>
-    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <title>Conexão Solidária</title>
 </head>
+
 <body>
-    <div id="navbar">
-        <div class="menu">
-            <a href="index.html">Home</a>
-            <a href="#ong1">ONG 1</a>
-            <a href="#ong2">ONG 2</a>
-            <a href="#ong3">ONG 3</a>
-            <a href="#doar">Doar </a>
-            <a href="sobre.html">Sobre</a>
-            <a href="contato.html">Contato</a>
-        </div>   
+    <header>
+        <nav id="navbar">
+            <ul class="menu">
+                <li><img src="img/logo.png" alt="Conexão Solidária logo"></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#instituições">Instituições</a></li>
+                <li><a href="form.html">Doar</a></li>
+                <li><a href="#ods3">ODS 3</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        
+        <div class="header-botao">
+            <h2 class="frase">"Doar é um gesto de carinho"</h2>
+            <a href="form.html" class="botao-link">Faça uma doação</a>
+        </div>
+    </header>
+    
+    <div class="container stretch" id="instituições">
+		<article class="item">
+            <h2><a href="https://nucleobatuira.org.br/" title="Clique aqui para mais informações"> Núcleo Batuíra</a></h2>
+            <p>O Núcleo Batuíra é uma instituição sem fins lucrativos, atuando há mais de 50 anos na prestação de assistência social e promoção da inclusão de pessoas em situação de vulnerabilidade por meio de programas e projetos socioeducativos.</p>
+            <a href="https://nucleobatuira.org.br/" title="Site Núcleo Batuíra">
+                <img class="img-ong" src="img/ong1-foto1.jpg" alt="Entrega do Núcleo Batuíra - Serviço de Promoção da Família - Unidade 4 no Jardim Ansalca em 6 de maio de 2022">
+            </a>
+        </article>
+		<article class="item">
+            <a href="https://www.lardosvovos.com.br/" title="Site Lar dos vovos">
+                <img class="img-ong" src="img/ong2-foto1.jpg" alt="Visita da guarda municipal de Londrina em 14 de agosto de 2018">
+            </a>
+            <h2><a href="https://www.lardosvovos.com.br/" title="Clique aqui para mais informações">Lar dos Vovôs e Vovozinhas</a></h2>
+            <p>O Lar dos Vovós é uma instituição localizada na cidade de Londrina, dedicada ao cuidado e bem-estar de idosos, proporcionando um ambiente acolhedor e assistência de qualidade.</p>
+        </article>
+	</div>
+    <div class="container stretch">
+		<article class="item">
+            <h2><a href="https://orar.org.br/" title="Clique aqui para mais informações">Grupo Orar</a></h2>
+            <p>A ORAR é uma organização fundada em 2007 em Cornélio Procópio, com o objetivo de promover inclusão social, capacitação profissional e geração de renda, apoiando pessoas em situação de vulnerabilidade e fortalecendo vínculos familiares.</p>
+            <a href="https://orar.org.br/" title="Site Grupo Orar">
+                <img class="img-ong" src="img/logo_ong3.png" alt="Grupo orar - A serviço do rei Jesus Cristo, para Glória de Deus">
+            </a>
+        </article>
+	</div>
+
+    <div class="ods" id="ods3">
+        <a href="https://www.ipea.gov.br/ods/ods3.html" title="Site IPEA - ODS 3">
+            <img class="img-ods" src="img/ODS3.png" alt="Objetivo de Desenvolvimento Sustentável 3 - Saúde e bem-estar, garantir o acesso à saúde de qualidade e promover o bem-estar para todos, em todas as idades">
+        </a>
+        <p class="center">A ODS 3 da ONU visa promover uma vida saudável e bem-estar para todas as pessoas, abordando questões como redução da mortalidade infantil, acesso a serviços de saúde, combate a doenças e fortalecimento de sistemas de saúde. É um compromisso global para melhorar a saúde e o bem-estar até 2030, com colaboração entre governos, organizações e comunidade internacional.</p>
     </div>
 
-    <section id="area-principal">
-        <article class="ods">
-            <!--<h1>Objetivos de Desenvolvimento Sustentável - Saúde e Bem-Estar</h1>-->
-            <img src="img/ODS 3.png" alt="Desenvolvimento sustentável saúde e bem-estar" class="responsiva">
-            <p>No texto de hoje, falaremos sobre o ODS nº 03 – Saúde e Bem Estar. De acordo com Programa das Nações Unidas para o Desenvolvimento (PNUD), “Desde os ODM foram registrados progressos históricos na redução da mortalidade infantil, na melhoria da saúde materna e na luta contra o HIV/Aids, a tuberculose, a malária e outras doenças. Em 15 anos, o número de pessoas infectadas pelo HIV anualmente caiu de 3,1 milhões para 2 milhões e mais de 6,2 milhões de vidas foram salvas da malária.</p>
-            <p>Apesar do progresso, as doenças crônicas e aquelas resultantes de desastres continuam a ser os principais fatores que contribuem para a pobreza e para a privação dos mais vulneráveis. Atualmente, 63% de todas as mortes do mundo provêm de doenças não transmissíveis, principalmente cardiovasculares, respiratórias, câncer e diabetes. Estima-se que as perdas econômicas para os países de renda média e baixa provenientes destas doenças ultrapassaram US$ 7 trilhões até 2025.</p>
-        </article>
+    <div class="container stretch">
+		<div class="item" id="sobre">
+            <h2>Sobre</h2>
+            <p>O Conexão Solidária é um projeto dedicado a unir corações e mãos em prol de um mundo mais solidário e sustentável.</p>
+            <p>Acreditamos que juntos podemos fazer a diferença. Nossa missão é promover a solidariedade e o cuidado, arrecadando doações de alimentos e fraldas geriátricas para apoiar três instituições que desempenham um papel fundamental na melhoria da vida de pessoas em situações de vulnerabilidade.</p>  
+        </div>
+		<div class="item" id="contato">
+            <h2>Contato</h2>
+            <p>Estamos aqui para ouvir você e responder às suas perguntas. Se você deseja entrar em contato conosco, ficaremos felizes em ajudar. Você pode nos encontrar nos seguintes canais:</p>
+            <ul class="lista-centralizada">
+                <li>
+                  <a href="mailto:seuemail@exemplo.com">
+                    <img src="/img/email-circle.png" width="45" alt="Email">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/">
+                    <img src="/img/instagram-with-circle.svg" width="45" alt="Instagram">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/">
+                    <img src="/img/facebook-circle.svg" width="45" alt="Facebook">
+                  </a>
+                </li>
+              </ul>
+        </div>
+	</div>
 
-        <article class="ong" id="ong1">
-            <h1>ONG 1 - Núcleo Batuíra</h1>
-            <img src="img/ong1-foto1.jpg" alt="Núcleo Batuíra" class="responsiva">
-            <p class="texto-ong">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at sem non urna posuere commodo vitae sed augue. Maecenas felis justo, tincidunt vitae mauris vitae, hendrerit malesuada diam. Phasellus vitae feugiat lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam vehicula, est eget tristique mattis, erat nulla hendrerit est, sit amet pretium mi arcu nec augue. Nulla dapibus faucibus ullamcorper. Donec dolor ipsum, congue venenatis rhoncus vitae, suscipit eu enim. Donec aliquam augue nisl, id mattis velit placerat in. Donec nibh mi, consectetur vitae tellus vel, scelerisque pharetra turpis. Sed vitae mattis velit. Aliquam convallis purus et tortor mollis iaculis. Nulla ac erat erat. Fusce fermentum justo tristique, porta mauris non, pellentesque erat. Integer porttitor lorem sed nibh feugiat, eget ullamcorper velit ornare.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at sem non urna posuere commodo vitae sed augue. Maecenas felis justo, tincidunt vitae mauris vitae, hendrerit malesuada diam. Phasellus vitae feugiat lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam vehicula, est eget tristique mattis, erat nulla hendrerit est, sit amet pretium mi arcu nec augue. Nulla dapibus faucibus ullamcorper. Donec dolor ipsum, congue venenatis rhoncus vitae, suscipit eu enim. Donec aliquam augue nisl, id mattis velit placerat in. Donec nibh mi, consectetur vitae tellus vel, scelerisque pharetra turpis. Sed vitae mattis velit. Aliquam convallis purus et tortor mollis iaculis. Nulla ac erat erat. Fusce fermentum justo tristique, porta mauris non, pellentesque erat. Integer porttitor lorem sed nibh feugiat, eget ullamcorper velit ornare.
-            </p>
-        </article>
-
-        <article class="ong" id="ong2">
-            <h1>ONG 2 - Lar dos vovos e vovozinhas</h1>
-            <img src="img/ong2-foto1.jpg" alt="Lar dos vovozinhos" class="responsiva">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at sem non urna posuere commodo vitae sed augue. Maecenas felis justo, tincidunt vitae mauris vitae, hendrerit malesuada diam. Phasellus vitae feugiat lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam vehicula, est eget tristique mattis, erat nulla hendrerit est, sit amet pretium mi arcu nec augue. Nulla dapibus faucibus ullamcorper. Donec dolor ipsum, congue venenatis rhoncus vitae, suscipit eu enim. Donec aliquam augue nisl, id mattis velit placerat in. Donec nibh mi, consectetur vitae tellus vel, scelerisque pharetra turpis. Sed vitae mattis velit. Aliquam convallis purus et tortor mollis iaculis. Nulla ac erat erat. Fusce fermentum justo tristique, porta mauris non, pellentesque erat. Integer porttitor lorem sed nibh feugiat, eget ullamcorper velit ornare.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at sem non urna posuere commodo vitae sed augue. Maecenas felis justo, tincidunt vitae mauris vitae, hendrerit malesuada diam. Phasellus vitae feugiat lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam vehicula, est eget tristique mattis, erat nulla hendrerit est, sit amet pretium mi arcu nec augue. Nulla dapibus faucibus ullamcorper. Donec dolor ipsum, congue venenatis rhoncus vitae, suscipit eu enim. Donec aliquam augue nisl, id mattis velit placerat in. Donec nibh mi, consectetur vitae tellus vel, scelerisque pharetra turpis. Sed vitae mattis velit. Aliquam convallis purus et tortor mollis iaculis. Nulla ac erat erat. Fusce fermentum justo tristique, porta mauris non, pellentesque erat. Integer porttitor lorem sed nibh feugiat, eget ullamcorper velit ornare.
-            </p>
-        </article>
-
-        <article class="ong" id="ong3">
-            <h1>ONG 3 - Grupo Orar</h1>
-            <img src="img/logo_ong3.png" alt="Grupo orar" class="responsiva">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at sem non urna posuere commodo vitae sed augue. Maecenas felis justo, tincidunt vitae mauris vitae, hendrerit malesuada diam. Phasellus vitae feugiat lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam vehicula, est eget tristique mattis, erat nulla hendrerit est, sit amet pretium mi arcu nec augue. Nulla dapibus faucibus ullamcorper. Donec dolor ipsum, congue venenatis rhoncus vitae, suscipit eu enim. Donec aliquam augue nisl, id mattis velit placerat in. Donec nibh mi, consectetur vitae tellus vel, scelerisque pharetra turpis. Sed vitae mattis velit. Aliquam convallis purus et tortor mollis iaculis. Nulla ac erat erat. Fusce fermentum justo tristique, porta mauris non, pellentesque erat. Integer porttitor lorem sed nibh feugiat, eget ullamcorper velit ornare.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at sem non urna posuere commodo vitae sed augue. Maecenas felis justo, tincidunt vitae mauris vitae, hendrerit malesuada diam. Phasellus vitae feugiat lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam vehicula, est eget tristique mattis, erat nulla hendrerit est, sit amet pretium mi arcu nec augue. Nulla dapibus faucibus ullamcorper. Donec dolor ipsum, congue venenatis rhoncus vitae, suscipit eu enim. Donec aliquam augue nisl, id mattis velit placerat in. Donec nibh mi, consectetur vitae tellus vel, scelerisque pharetra turpis. Sed vitae mattis velit. Aliquam convallis purus et tortor mollis iaculis. Nulla ac erat erat. Fusce fermentum justo tristique, porta mauris non, pellentesque erat. Integer porttitor lorem sed nibh feugiat, eget ullamcorper velit ornare.
-            </p>
-        </article>
-
-        <article class="doar" id="doar">
-            <h1>Doar</h1>
-            <img src="img/logo_ong3.png" class="responsiva">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at sem non urna posuere commodo vitae sed augue. Maecenas felis justo, tincidunt vitae mauris vitae, hendrerit malesuada diam. Phasellus vitae feugiat lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam vehicula, est eget tristique mattis, erat nulla hendrerit est, sit amet pretium mi arcu nec augue. Nulla dapibus faucibus ullamcorper. Donec dolor ipsum, congue venenatis rhoncus vitae, suscipit eu enim. Donec aliquam augue nisl, id mattis velit placerat in. Donec nibh mi, consectetur vitae tellus vel, scelerisque pharetra turpis. Sed vitae mattis velit. Aliquam convallis purus et tortor mollis iaculis. Nulla ac erat erat. Fusce fermentum justo tristique, porta mauris non, pellentesque erat. Integer porttitor lorem sed nibh feugiat, eget ullamcorper velit ornare.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at sem non urna posuere commodo vitae sed augue. Maecenas felis justo, tincidunt vitae mauris vitae, hendrerit malesuada diam. Phasellus vitae feugiat lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam vehicula, est eget tristique mattis, erat nulla hendrerit est, sit amet pretium mi arcu nec augue. Nulla dapibus faucibus ullamcorper. Donec dolor ipsum, congue venenatis rhoncus vitae, suscipit eu enim. Donec aliquam augue nisl, id mattis velit placerat in. Donec nibh mi, consectetur vitae tellus vel, scelerisque pharetra turpis. Sed vitae mattis velit. Aliquam convallis purus et tortor mollis iaculis. Nulla ac erat erat. Fusce fermentum justo tristique, porta mauris non, pellentesque erat. Integer porttitor lorem sed nibh feugiat, eget ullamcorper velit ornare.
-            </p>
-        </article>
-    </section>
-    <section class="container stretch">
-		<div class="item">Quem Somos</div>
-		<div class="item">Contato</div>
-	</section>
     <footer>
-        © Projeto Front-end 2023 - Todos os direitos reservados
+        <p>© Conexão Solidária 2023 - Todos os direitos reservados</p>
     </footer>
 </body>
 </html>

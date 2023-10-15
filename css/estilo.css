@@ -3,78 +3,143 @@
     margin: 0;
 }
 
+@font-face {
+    font-family: 'DancingScript';
+    src: url(/fonts/DancingScript-VariableFont_wght.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    font-size: 16;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    background: #fff;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background: #ebe8e8;
+}
+
+header {
+    background-image: url(/img/ods3-edit.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #navbar {
-    background: #99CD85;
-    border-bottom: 1px solid #d8d8d8;
-    height: 55px;
+    background: #0000006e;
     position: fixed;
     top: 0;
     width: 100%;
-    opacity: 0.9;
+    justify-content: center;
+    align-content: center;
+    display: flex;
 }
 
 .menu{
-    float: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    display: flex; 
 }
 
-#area-principal {
-    max-width: 720px;
-    margin: 10px auto 10px auto;
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
+
+.menu img{
+    width: 40px;
+}
+
+header a {
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+header a:link {
+    color: white;
+}
+
+header a:visited {
+    color: white;
+}
+
+header a:hover {
+    color: #05db3b;
+}
+
+.frase {
+    font-family: 'DancingScript', 'Poppins', sans-serif;
+    font-size: 3.2rem;
+    color: white;
+    width: fit-content;
+}
+
+.header-botao{
+    padding-left: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.botao-link {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 20px;
+    background-color: #4c9f38;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.botao-link:hover {
+    background-color: #06d1c7;
+    color: white;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 .ods {
+    margin: auto;
+    max-width: 100%;
     background: #4C9F38;
     margin-top: 55px;
     color: white;
-    height: 100vh;
-    padding: 20px;
+    padding-left: 15%;
+    padding-right: 15%;    
+    padding-bottom: 1%;
+    text-align: center;
 }
 
-.ong {
-    background: rgb(45, 170, 160);
-    padding: 10px 10px 10px 10px;
-    color: white;
-}
-
-h1 {
-    color: #ffffff;
+.item h2 {
+    color: black;
     font-size: 35px;
     text-align: center;
     margin: 15px;
     padding: 15px 15px;
 }
 
-a {
-    text-decoration: none;
-    padding: 5px 10px;
+.item h2 {
+    margin: 15px;
 }
 
-a:link {
-    color: white;
-}
-
-a:visited {
-    color: white;
-}
-
-a:hover {
-    color: #4c9f38;
+.item p{
+    padding-bottom: 20px;
 }
 
 footer{
+    font-size: 10px;
     background: black;
-    padding: 15px;
+    padding: 5px;
     text-align: center;
     color: white;
     text-transform: uppercase;
@@ -83,12 +148,11 @@ footer{
 .responsiva{
     width: 100%;
     height: auto;
-    width: 100%;
 }
 
 .container {
-	max-width: 720px;
-	margin: 0 auto;
+	max-width: 1000px;
+	margin: 30px auto;
 	display: flex; 
 }
 
@@ -96,13 +160,55 @@ footer{
 	align-items: stretch;
 }
 
+.img-ong{
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+}
+
+.img-ods{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    height: auto;
+}
+
 .item {
 	flex: 1;
 	margin: 5px;
 	padding: 0 10px;
-	
-	color: rgb(40, 204, 18);
+	color: black;
 	text-align: center;
-	font-size: 1.5em;
+	font-size: 15px;
 }
 
+.item a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+.item a:link {
+    color: black;
+}
+
+.item a:visited {
+    color: black;
+}
+
+.item a:hover {
+    color: gray;
+}
+
+.stretch {
+	align-items: stretch;
+}
+
+.lista-centralizada {
+    text-align: center;
+}
+
+.lista-centralizada li {
+    margin: 0 10px;
+}
+  

@@ -1,0 +1,249 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'DancingScript';
+    src: url(/fonts/DancingScript-VariableFont_wght.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #ebe8e8;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+header {
+    background-image: url(/img/painel1-foto1-w2.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 0%;
+    height: 658px;
+    position:relative;
+}
+
+.header-text {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -85%);
+    padding: 60px;
+}
+
+#navbar {
+    background: #0000006e;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+}
+
+.menu{
+    justify-content: center;
+    align-items: center;
+    display: flex; 
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu img {
+    width: 40px;
+}
+
+header a {
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+header a:link {
+    color: white;
+}
+
+header a:visited {
+    color: white;
+}
+
+header a:hover {
+    color: #05db3b;
+}
+
+.header-text h1 {
+    font-family: 'DancingScript', 'Poppins', sans-serif;
+}
+
+.container {
+	max-width: 900px;
+	margin: auto;
+	display: flex; 
+    height: 100%;
+}
+
+.stretch {
+	align-items: stretch;
+}
+
+.item {
+	flex: 1;
+    margin: 2px;
+	color: black;
+	text-align: center;
+	font-size: 15px;
+}
+
+.form {
+    top: 55%;
+    left: 60%;
+    background-color: rgba(153, 205, 133, 0.5);
+    padding: 30px;
+    border-radius: 2cm;
+}
+
+.form img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+.info {
+    padding: 20px;
+    background-color: #99CD85;
+    font-size: 16px;
+    height: 89em;
+}
+
+.info h3 {
+    color: #ffffff;
+    font-size: 35px;
+    text-align: center;
+    
+}
+
+.info h2 {
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+    
+}
+
+.info p {
+    padding: 5px 0;
+    text-align: center;
+    
+}
+
+.info img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 30px 0px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form input[type="password"],
+form input[type="date"] {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #c4c4c4;
+    padding: 1em;
+    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: medium;
+    margin-top: 0.5rem;
+}
+
+.container-ongs input[type="radio"],
+.container-ongs label,
+.container-doacoes input[type="radio"],
+.container-doacoes label,
+.container-formulario-politicas input[type="radio"],
+.container-formulario-politicas label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: medium;
+}
+
+.botao-doar {
+    border-radius: 10%;
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 25px;
+}
+
+@media (min-width: 1200px) {
+    .header-text {
+        max-width: 60%;
+    }
+
+    .header-text h1 {
+        font-size: 50px;
+    }
+
+    .header-text p {
+        font-size: 18px;
+    }
+}
+
+.validadeCartao label, select {
+    display: inline-block;
+}
+
+.validadeCartao label, select {
+    margin-right: 10px; 
+}
+
+select[name="ano"] {
+    margin-top: 7px; 
+}
+
+select[name="mes"] {
+    margin-top: 7px; 
+}
+select {
+    margin-bottom: 10px; 
+}
+
+.validadeCartao p{
+    margin-top: 10px;
+}
+
+footer{
+    font-size: 10px;
+    background: black;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
