@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/form.css" />
+    <link rel="stylesheet" href="/css/form.css">
     <title>Doação</title>
 </head>
 
@@ -31,27 +31,27 @@
 
         <div class="item">
             <div class="info"> 
-                <h1>VOCÊ SABIA?</h1><br>
-                <h2>BENEFÍCIOS FISCAIS</h2><br>
+                <h2>VOCÊ SABIA?</h2><br>
+                <h3>BENEFÍCIOS FISCAIS</h3><br>
                 <p> Em muitos lugares, as doações para organizações sem fins lucrativos são dedutíveis de impostos!</p><br>
-                <h2>MELHORE VIDAS</h2><br>
+                <h3>MELHORE VIDAS</h3><br>
                 <p>Doar para ONGs como o Lar das Vovozinhas ou o Instituto Batuíra tem um impacto direto na vida da pessoasque mais precisam</p><br>
                 <p>Sua doação contribui para a construção de um futuro melhor para a comunidade atendida pelas ONG's.</p><br>
-                <img src="/img/painel1-foto2.png" alt="ajudar">
-                <h2>SE AJUDE AO AJUDAR</h2><br>
+                <img src="/img/painel1-foto2.png" alt="">
+                <h3>SE AJUDE AO AJUDAR</h3><br>
                 <p>Saber que você está fazendo a diferença na vida de alguém e ajudando a construir um mundo mais justo pode ser extremamente gratificante.</p><br>
-                <h2>#ÉTempoDeCuidar dos que cuidaram de nós.</h2><br>
+                <h3>#ÉTempoDeCuidar dos que cuidaram de nós.</h3><br>
                 <p>Juntos, podemos fazer a diferença nas vidas das pessoas.</p><br>
                 <p> Faça parte desta corrente de solidariedade</p><br>
                 <p> Ajude-nos a construir um mundo melhor para todos</p><br>
-                <h2>Transparência e prestação de compras do Conexão Solidária</h2>
+                <h3>Transparência e prestação de compras do Conexão Solidária</h3>
             </div>
         </div>
 
         <div class="item">
             <div class="form">
-                <h1>FAÇA UMA DOAÇÃO!</h1>
-                <h2>ESCOLHA A ONG:</h2>
+                <h2>FAÇA UMA DOAÇÃO!</h2>
+                <h3>ESCOLHA A ONG:</h3>
                 <div class="container-ongs">
                     <input type="radio" name="size" id="nucleoBatuira">
                     <label for="nucleoBatuira">Núcleo Batuíra</label><br>
@@ -69,15 +69,15 @@
                 </div>
 
                 <div class="input-container name">
-                    <label for="fname">nome</label>
+                    <label for="name">nome</label>
                     <input id="name" name="fname" type="text" style="width: 100%">
                 </div>
                 <div class="input-container cpf">
                     <label for="cpf">cpf</label>
-                    <input id="cpf" name="cpf" type="number" style="width: 100%">
+                    <input id="cpf" name="cpf" type="text" style="width: 100%">
                 </div>
                 <div class="input-container email">
-                    <label for="femail">e-mail</label>
+                    <label for="email">e-mail</label>
                     <input id="email" name="email" type="email" style="width: 100%">
                 </div>
                 <div class="input-container data">
@@ -86,7 +86,7 @@
                 </div>
                 <div class="input-container cep">
                     <label for="cep">cep</label>
-                    <input for="cep" name="cep" type="number" style="width: 100%">
+                    <input id="cep" name="cep" type="number" style="width: 100%">
                 </div>
                 <div class="input-container rua">
                     <label for="rua">rua</label>
@@ -112,34 +112,56 @@
                     <label for="cidade">cidade</label>
                     <input id="cidade" name="cidade" type="text" style="width: 100%">
                 </div>
-                <img src="/img/painel1-foto3(1).png">
+                <img src="/img/painel1-foto3(1).png" alt="">
                 <div class="numeroCartao">
                     <label for="numeroCartao">número do cartão</label>
                     <input id="numeroCartao" name="numeroCartao" type="text" style="width: 100%">
                     <div class="cvv">
                         <label for="cvv">cvv</label>
-                        <input id="cvv" name="cvv" type="cvv" style="width: 100%">
+                        <input id="cvv" name="cvv" type="text" style="width: 100%">
                     </div>
                     <div class="nomeCartao">
                         <label for="nomeCartao">nome como está no cartão</label>
-                        <input id="nomeCartao" name="nomeCartao" type="nomeCartao" style="width: 100%">
+                        <input id="nomeCartao" name="nomeCartao" type="text" style="width: 100%">
                     </div>
-                    <div class="validadeCartao">
-                        <labeL for="validadeCartao">validade do cartão</labeL>
-                        <input id="validadeCartao" name="validadeCartao" type="validadeCartao" style="width: 100%">
-                    </div>
+                    <div class="validadeCartao" >
+                        <label for="validadeCartao">Validade do Cartão</label>
+                        <label for="mes">Mês:</label>
+                        <select id="mes" name="mes">
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <label for="ano">Ano:</label>
+                        <select id="ano" name="ano">
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                        </select>
+                    </div> 
                 </div>
+
                 <div class="container-formulario-politicas">
                     <input type="checkbox" name="size" id="politicaPrivacidade">
-                    <label for="politicaPrivacidade">Li e aceito a <a
-                            href="url_da_politica_de_privacidade.html">Política de Privacidade</a> e os <a
-                            href="url_dos_termos_de_uso.html">Termos
-                            de
-                            Uso</a></label><br>
-                    <input type="checkbox" name="size" id="notificacoes">
+                    <label for="politicaPrivacidade">Li e aceito a <a href="url_da_politica_de_privacidade.html">Política de Privacidade</a> e <br>os <a href="url_dos_termos_de_uso.html">Termo de Uso</a></label><br>
+                    <input type="checkbox" name="size" id="notificacoes1">
                     <label for="notificacoes1">Aceito ser noficado sobre a minha doação</label><br>
                     <input type="checkbox" name="size" id="notificacoes2">
-                    <label for="notificacoes2"> Aceito receber notificações sobre o Conexão Solidária<br></label>
+                    <label for="notificacoes2">Aceito receber notificações sobre o <br> Conexão Solidária<br></label>
                 </div>
                 <button class="botao-doar">Doar</button>
             </div>

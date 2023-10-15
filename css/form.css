@@ -12,7 +12,7 @@
 
 body {
     background-color: #ebe8e8;
-    font-size: 16;
+    font-size: 16px;
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
@@ -124,18 +124,18 @@ header a:hover {
 .info {
     padding: 20px;
     background-color: #99CD85;
-    font-size: 16;
-    height: 97em;
+    font-size: 16px;
+    height: 89em;
 }
 
-.info h2 {
+.info h3 {
     color: #ffffff;
     font-size: 35px;
     text-align: center;
     
 }
 
-.info h1 {
+.info h2 {
     color: #ffffff;
     font-size: 40px;
     text-align: center;
@@ -143,6 +143,7 @@ header a:hover {
 }
 
 .info p {
+    padding: 5px 0;
     text-align: center;
     
 }
@@ -151,8 +152,7 @@ header a:hover {
     display: block;
     margin: 0 auto;
     max-width: 100%;
-    max-height: auto;
-    padding: 20px;
+    padding: 30px 0px;
 }
 
 form input[type="text"],
@@ -165,7 +165,7 @@ form input[type="date"] {
     box-sizing: border-box;
     border-radius: 8px;
     border: 1px solid #c4c4c4;
-    padding: lem;
+    padding: 1em;
     margin-bottom: 1.25rem;
     font-size: 0.875rem;
 }
@@ -213,6 +213,26 @@ label {
     .header-text p {
         font-size: 18px;
     }
+}
+
+.validadeCartao label, select {
+    display: inline-block;
+}
+
+.validadeCartao label, select {
+    float: left;
+    margin-right: 10px; 
+}
+
+select[name="ano"] {
+    margin-top: 7px; 
+}
+
+select[name="mes"] {
+    margin-top: 7px; 
+}
+select {
+    margin-bottom: 10px; /* Ajuste o valor conforme necessário */
 }
 
 footer{

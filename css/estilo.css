@@ -11,7 +11,7 @@
 }
 
 body {
-    font-size: 16;
+    font-size: 16px;
     font-family: 'Poppins', sans-serif;
     background: #ebe8e8;
 }
@@ -102,17 +102,6 @@ header a:hover {
     color: white;
 }
 
-.ong {
-    color: black;
-    max-width: 1200px;
-    margin: auto;
-    max-width: 100%;
-    margin-top: 55px;
-    padding-left: 400px;
-    padding-right: 400px;    
-    padding-bottom: 30px;
-}
-
 .center{
     display: block;
     margin-left: auto;
@@ -131,7 +120,7 @@ header a:hover {
     text-align: center;
 }
 
-h1 {
+.item h2 {
     color: black;
     font-size: 35px;
     text-align: center;
@@ -139,11 +128,11 @@ h1 {
     padding: 15px 15px;
 }
 
-h2 {
+.item h2 {
     margin: 15px;
 }
 
-p{
+.item p{
     padding-bottom: 20px;
 }
 
@@ -200,15 +189,15 @@ footer{
 }
 
 .item a:link {
-    color: none;
+    color: black;
 }
 
 .item a:visited {
-    color: none;
+    color: black;
 }
 
 .item a:hover {
-    color: none;
+    color: gray;
 }
 
 .stretch {
