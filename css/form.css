@@ -26,7 +26,7 @@ header {
     background-position: center;
     text-align: center;
     padding: 0%;
-    height: 658px;
+    height: 100vh;
     position:relative;
 }
 
@@ -125,7 +125,6 @@ header a:hover {
     padding: 20px;
     background-color: #99CD85;
     font-size: 16px;
-    height: 89em;
 }
 
 .info h3 {
