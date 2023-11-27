@@ -1,30 +1,36 @@
-var listaDoares = [];
+var listaDoadores = [];
 
 function addDoador(name, cpf, email, data, cep, rua, numero, complemento, bairro, cidade, estado){
     var novoDoador = {name: name, cpf: cpf, email: email, data: data, cep: cep, rua: rua, numero: numero, complemento: complemento, bairro: bairro, cidade: cidade, estado: estado};
-    listaDoares.push(novoDoador);
-    localStorage.setItem('listaDoares', JSON.stringify(listaDoares));
-    renderDonateList();
+    listaDoadores.push(novoDoador);
+    localStorage.setItem('listaDoadores', JSON.stringify(listaDoadores));
+    criarListaDoadores();
 }
 
-function getListaDoares() {
-    var listaStored = JSON.parse(localStorage.getItem('listaDoares'));
-    listaDoares = listaStored || [];
+function getListaDoadores() {
+  var storedList = JSON.parse(localStorage.getItem('listaDoadores')); 
+  listaDoadores = storedList || []; 
 }
 
-function renderDonateList() {
-    var donateListElement = document.getElementById('listaDoares');
-    donateListElementListElement.innerHTML = ''; //limpa o conteúdo HTML do elemento patientListElement
-  
-    listaDoares.forEach(function (donate) {
-      var listItem = document.createElement('li');
-      //renderiza a lista de pacientes. Itera sobre cada paciente na lista encontrada e cria um <li> para cada paciente
-      listItem.innerHTML = '<span class="patient-name">' + patient.name + '</span> (Idade: ' + patient.age + ') <button class="delete-button" onclick="deletePatient(' + patient.id + ')">Excluir</button>';
-      patientListElement.appendChild(listItem);
-    });
-  }
+function criarListaDoadores() {
+  var listaDoadoresElement = document.getElementById('listaDoadores');
+  listaDoadoresElement.innerHTML = '';
 
-getListaDoares(); 
+  listaDoadores.forEach(function (doador) {
+    var listItem = document.createElement('li');
+    let data = new Date();
+    let dia = data.getDate();
+    let mes = data.getMonth() + 1;
+    let ano = data.getFullYear();
+    var dataFormatada = (dia < 10 ? '0' : '') + dia + '/' + (mes< 10 ? '0' : '') + mes + '/' + ano;
+    listItem.innerHTML = '<span class="data">' + dataFormatada + '</span> <span class="doador-name">' + doador.name + '</span> (E-mail: ' + doador.email + ')';
+    listaDoadoresElement.appendChild(listItem);
+  });
+}
+
+getListaDoadores()
+
+criarListaDoadores()
 
 document.getElementById("doacao").addEventListener('submit', function(event) {
     event.preventDefault();
@@ -39,17 +45,20 @@ document.getElementById("doacao").addEventListener('submit', function(event) {
     var bairroInput = document.getElementById('bairroInput');
     var cidadeInput = document.getElementById('cidadeInput');
     var estadoInput = document.getElementById('estadoInput');
-    addDoador(nameInput.value, parseInt(cpfInput.value), emailInput.value, dataInput.value, parseInt(cepInput.value), ruaInput.value, parseInt(numeroInput.value), complementoInput.value, bairroInput.value, cidadeInput.value, estadoInput.value);
-    nameInput = '';
-    cpfInput = '';
-    emailInput = '';
-    dataInput = '';
-    cepInput = '';
-    ruaInput = '';
-    numeroInput = '';
-    complementoInput = '';
-    bairroInput = '';
-    cidadeInput = '';
-    estadoInput = '';
+    addDoador(nameInput.value, cpfInput.value, emailInput.value, dataInput.value, cepInput.value, ruaInput.value, numeroInput.value, complementoInput.value, bairroInput.value, cidadeInput.value, estadoInput.value);
+    nameInput.value = '';
+    cpfInput.value = '';
+    emailInput.value = '';
+    dataInput.value = '';
+    cepInput.value = '';
+    ruaInput.value = '';
+    numeroInput.value = '';
+    complementoInput.value = '';
+    bairroInput.value = '';
+    cidadeInput.value = '';
+    estadoInput.value = '';
+    alert('Lista criada');
 });
+
+localStorage.removeItem('name');
 

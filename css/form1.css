@@ -87,10 +87,21 @@ header a:hover {
 }
 
 .container {
-	max-width: 1000px;
+	max-width: 1200px;
 	margin: auto;
 	display: flex; 
     height: 100%;
+}
+
+.container2 {
+	width: 800px;
+	margin: auto;
+    margin-bottom: 20px;
+	display: flex; 
+    height: 100%;
+    background: white;
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid black;
 }
 
 .stretch {
@@ -98,13 +109,37 @@ header a:hover {
 }
 
 .item {
-    border: 2px black solid;
-    padding: 30px;
+    padding: 15px;
 	flex: 1;
     margin: 2px;
 	color: black;
 	text-align: center;
 	font-size: 15px;
+}
+
+.item2 {
+    padding: 15px;
+	flex: 1;
+    margin: 2px;
+	color: black;
+	text-align: left;
+	font-size: 15px;
+}
+
+.item3 {
+    padding: 15px;
+	flex: 1;
+    margin: 2px;
+	color: black;
+	text-align: center;
+	font-size: 15px;
+    
+}
+
+input[type="text"],input[type="number"],input[type="email"], input[type="date"]{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
 }
 
 footer{
@@ -116,10 +151,29 @@ footer{
     text-transform: uppercase;
 }
 
-#info {
-    background: #4c9f38;
+button{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 20px;
+    background-color: #4c9f38;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    size: 20px;
 }
 
-#info h2, h3{
+button:hover{
+    background-color: #06d1c7;
     color: white;
 }
+
+.item3 ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .item3 li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
