@@ -54,7 +54,7 @@ header {
     display: flex; 
 }
 
-ul {
+#navbar ul {
     list-style: none;
     padding: 0;
     display: flex;
@@ -246,3 +246,25 @@ footer{
     text-transform: uppercase;
 }
 
+.donate {
+    background: rgb(204, 202, 202);
+}
+
+.donate h2{
+    padding: 20px;
+    color: green;
+    text-align: center;
+
+}
+
+.donate ul{
+    margin: 0;
+    padding: 0;
+}
+
+.donate ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    font-size: 18px;
+}

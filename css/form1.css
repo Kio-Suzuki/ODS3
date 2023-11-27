@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'DancingScript';
+    src: url(/fonts/DancingScript-VariableFont_wght.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #ebe8e8;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+header {
+    background-image: url(/img/painel1-foto1-w2.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 0%;
+    height: 100vh;
+    position:relative;
+}
+
+.header-text {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -85%);
+    padding: 60px;
+}
+
+#navbar {
+    background: #0000006e;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+}
+
+.menu{
+    justify-content: center;
+    align-items: center;
+    display: flex; 
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu img {
+    width: 40px;
+}
+
+header a {
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+header a:link {
+    color: white;
+}
+
+header a:visited {
+    color: white;
+}
+
+header a:hover {
+    color: #05db3b;
+}
+
+.header-text h1 {
+    font-family: 'DancingScript', 'Poppins', sans-serif;
+}
+
+.container {
+	max-width: 1000px;
+	margin: auto;
+	display: flex; 
+    height: 100%;
+}
+
+.stretch {
+	align-items: stretch;
+}
+
+.item {
+    border: 2px black solid;
+    padding: 30px;
+	flex: 1;
+    margin: 2px;
+	color: black;
+	text-align: center;
+	font-size: 15px;
+}
+
+footer{
+    font-size: 10px;
+    background: black;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+#info {
+    background: #4c9f38;
+}
+
+#info h2, h3{
+    color: white;
+}
