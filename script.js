@@ -57,7 +57,6 @@ document.getElementById("doacao").addEventListener('submit', function(event) {
     bairroInput.value = '';
     cidadeInput.value = '';
     estadoInput.value = '';
-    alert('Lista criada');
 });
 
 localStorage.removeItem('name');
