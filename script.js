@@ -1,8 +1,8 @@
 var listaDoadores = [];
 var id = 1;
 
-function addDoador(name, cpf, email, data, cep, rua, numero, complemento, bairro, cidade, estado){
-    var novoDoador = {id: id++, name: name, cpf: cpf, email: email, data: data, cep: cep, rua: rua, numero: numero, complemento: complemento, bairro: bairro, cidade: cidade, estado: estado};
+function addDoador(name, cpf, email, data, cep, rua, numero, complemento, bairro, cidade, estado, ong, doar){
+    var novoDoador = {id: id++, name: name, cpf: cpf, email: email, data: data, cep: cep, rua: rua, numero: numero, complemento: complemento, bairro: bairro, cidade: cidade, estado: estado, ong: ong, doar: doar};
     listaDoadores.push(novoDoador);
     localStorage.setItem('listaDoadores', JSON.stringify(listaDoadores));
     criarListaDoadores();
@@ -24,7 +24,8 @@ function criarListaDoadores() {
     let mes = data.getMonth() + 1;
     let ano = data.getFullYear();
     var dataFormatada = (dia < 10 ? '0' : '') + dia + '/' + (mes< 10 ? '0' : '') + mes + '/' + ano;
-    listItem.innerHTML = '<span class="data">' + dataFormatada + '</span> <span class="doador-name">' + doador.name + '</span> (E-mail: ' + doador.email + ')<span class="delete-button" onclick="excluiDoador(' + doador.id + ')">\u00D7</button>';
+    listItem.innerHTML = '<span class="doador-name">' + doador.name + '</span> ajudou ' + doador.ong + '<span class="data"> em ' + dataFormatada + '</span><span class="delete-button" onclick="excluiDoador(' + doador.id + ')">\u00D7</span>';
+
     listaDoadoresElement.appendChild(listItem);
   });
 }
@@ -46,19 +47,48 @@ document.getElementById("doacao").addEventListener('submit', function(event) {
     var bairroInput = document.getElementById('bairroInput');
     var cidadeInput = document.getElementById('cidadeInput');
     var estadoInput = document.getElementById('estadoInput');
-    addDoador(nameInput.value, cpfInput.value, emailInput.value, dataInput.value, cepInput.value, ruaInput.value, numeroInput.value, complementoInput.value, bairroInput.value, cidadeInput.value, estadoInput.value);
-    nameInput.value = '';
-    cpfInput.value = '';
-    emailInput.value = '';
-    dataInput.value = '';
-    cepInput.value = '';
-    ruaInput.value = '';
-    numeroInput.value = '';
-    complementoInput.value = '';
-    bairroInput.value = '';
-    cidadeInput.value = '';
-    estadoInput.value = '';
-});
+    var ongSelecionada = document.querySelector('input[name="ong"]:checked').value;
+    var doarBoxes = document.querySelectorAll('input[name="doar"]:checked');
+    var doacoes = [];
+    doarBoxes.forEach(function(checkbox) {
+        doacoes.push(checkbox.value);
+    });
+
+    if (nameInput.value.length == 0) {
+      alert('Informe um nome');
+    } else if (cpfInput.value.length == 0) {
+      alert('Informe um CPF');
+    } else if (emailInput.value.length == 0) {
+      alert('Informe um e-mail');
+    } else if (dataInput.value.length == 0) {
+      alert('Informe uma data de nascimento');
+    } else if (cepInput.value.length == 0) {
+      alert('Informe um CEP');
+    } else if (ruaInput.value.length == 0) {
+      alert('Informe uma rua');
+    } else if (numeroInput.value.length == 0) {
+      alert('Informe um número');
+    } else if (bairroInput.value.length == 0) {
+      alert('Informe um bairro');
+    } else if (cidadeInput.value.length == 0) {
+      alert('Informe uma cidade');
+    } else if (estadoInput.value.length == 0) {
+      alert('Informe um estado');
+    } else {
+
+      addDoador(nameInput.value, cpfInput.value, emailInput.value, dataInput.value, cepInput.value, ruaInput.value, numeroInput.value, complementoInput.value, bairroInput.value, cidadeInput.value, estadoInput.value, ongSelecionada, doacoes);
+      nameInput.value = '';
+      cpfInput.value = '';
+      emailInput.value = '';
+      dataInput.value = '';
+      cepInput.value = '';
+      ruaInput.value = '';
+      numeroInput.value = '';
+      complementoInput.value = '';
+      bairroInput.value = '';
+      cidadeInput.value = '';
+      estadoInput.value = '';
+}});
 
 function excluiDoador(doadorId) {
   var listaDoadoresAtual = listaDoadores.filter(function (doador) {

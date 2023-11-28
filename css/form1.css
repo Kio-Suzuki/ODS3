@@ -133,7 +133,6 @@ header a:hover {
 	color: black;
 	text-align: center;
 	font-size: 15px;
-    position: relative;
 }
 
 input[type="text"],input[type="number"],input[type="email"], input[type="date"]{
@@ -172,13 +171,13 @@ button[type='submit']:hover{
 .item3 ul {
     list-style-type: none;
     padding: 0;
-  }
+}
   
-  .item3 li {
+.item3 li {
     background-color: #f9f9f9;
     padding: 10px;
     margin-bottom: 5px;
-  }
+}
 
 .delete-button {
     padding: 1px;
@@ -208,5 +207,9 @@ button[type='submit']:hover{
     text-align: center;
     background: rgb(182, 178, 178);
     padding: 10px;
+}
+
+.delete-button {
+    margin-left: 10px; 
 }
 
