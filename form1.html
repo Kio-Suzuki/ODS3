@@ -49,45 +49,49 @@
     <div class="container2">
         <div class="item2">
             <form id="doacao">
-                <label for="nameInput">Nome:</label><br>
-                <input id="nameInput" type="text"><br>
+                <label for="nameInput">Nome:</label>
+                <input id="nameInput" type="text">
                 
-                <label for="cpfInput">CPF:</label><br>
-                <input id="cpfInput" type="text" placeholder="xxx.xxx.xxx-xx"><br>
+                <label for="cpfInput">CPF:</label>
+                <input id="cpfInput" type="text" placeholder="xxx.xxx.xxx-xx">
         
-                <label for="emailInput">E-mail:</label><br>
-                <input id="emailInput" type="email"><br>
+                <label for="emailInput">E-mail:</label>
+                <input id="emailInput" type="email">
         
-                <label for="dataInput">Data de nascimento:</label><br>
-                <input id="dataInput" type="date"><br>
+                <label for="dataInput">Data de nascimento:</label>
+                <input id="dataInput" type="date">
         
-                <label for="cepInput">CEP:</label><br>
-                <input id="cepInput" type="text" placeholder="xx.xxx-xxx"><br>
+                <label for="cepInput">CEP:</label>
+                <input id="cepInput" type="text" placeholder="xx.xxx-xxx">
         
-                <label for="ruaInput">Rua:.</label><br>
-                <input id="ruaInput" type="text"><br>
+                <label for="ruaInput">Rua:</label>
+                <input id="ruaInput" type="text">
         
-                <label for="numeroInput">Número:</label><br>
-                <input id="numeroInput" type="text"><br>
+                <label for="numeroInput">Número:</label>
+                <input id="numeroInput" type="text">
         
-                <label for="complementoInput">Complemento:</label><br>
-                <input id="complementoInput" type="text"><br>
+                <label for="complementoInput">Complemento:</label>
+                <input id="complementoInput" type="text">
         
-                <label for="bairroInput">Bairro:</label><br>
-                <input id="bairroInput" type="text"><br>
+                <label for="bairroInput">Bairro:</label>
+                <input id="bairroInput" type="text">
         
-                <label for="cidadeInput">Cidade:</label><br>
-                <input id="cidadeInput" type="text"><br>
+                <label for="cidadeInput">Cidade:</label>
+                <input id="cidadeInput" type="text">
         
-                <label for="estadoInput">Estado:</label><br>
-                <input id="estadoInput" type="text"><br>
+                <label for="estadoInput">Estado:</label>
+                <input id="estadoInput" type="text">
                 <button type="submit">Doar</button>
+                <button type="reset">Limpar campos</button>
+
             </form>
         </div>
 
         <div class="item3">
             <h2>Últimos Doadores</h2>
             <ul id="listaDoadores"></ul>
+            
+            <span class="clearAll" type="button" onclick="deleteAll()">Excluir todos itens</span>
         </div>
 
     </div>

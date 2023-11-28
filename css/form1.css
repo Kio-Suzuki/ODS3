@@ -94,13 +94,14 @@ header a:hover {
 }
 
 .container2 {
-	width: 800px;
+	width: 1000px;
 	margin: auto;
     margin-bottom: 20px;
 	display: flex; 
     height: 100%;
     background: white;
     box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.2);
+    
 }
 
 .stretch {
@@ -132,7 +133,7 @@ header a:hover {
 	color: black;
 	text-align: center;
 	font-size: 15px;
-    
+    position: relative;
 }
 
 input[type="text"],input[type="number"],input[type="email"], input[type="date"]{
@@ -150,7 +151,7 @@ footer{
     text-transform: uppercase;
 }
 
-button{
+button[type='submit']{
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
     padding: 10px 20px;
@@ -159,9 +160,11 @@ button{
     border-radius: 25px;
     cursor: pointer;
     size: 20px;
+    display: block;
+    margin: auto;
 }
 
-button:hover{
+button[type='submit']:hover{
     background-color: #06d1c7;
     color: white;
 }
@@ -176,3 +179,34 @@ button:hover{
     padding: 10px;
     margin-bottom: 5px;
   }
+
+.delete-button {
+    padding: 1px;
+    width: 10%;
+    background: #d9d9d9;
+    color: #555;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+}
+
+.clearAll {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    background: rgb(112, 110, 110);
+    padding: 10px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.clearAll:hover {
+    color: black;
+    font-size: 14px;
+    text-align: center;
+    background: rgb(182, 178, 178);
+    padding: 10px;
+}
+
