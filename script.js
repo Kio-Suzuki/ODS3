@@ -88,6 +88,12 @@ document.getElementById("doacao").addEventListener('submit', function(event) {
       bairroInput.value = '';
       cidadeInput.value = '';
       estadoInput.value = '';
+      document.getElementById('ong1').checked = false;
+      document.getElementById('ong2').checked = false;
+      document.getElementById('ong3').checked = false;
+      document.getElementById('doacao1').checked = false;
+      document.getElementById('doacao2').checked = false;
+
 }});
 
 function excluiDoador(doadorId) {
@@ -111,14 +117,14 @@ function deleteAll() {
 }
 
 function pesquisar() {
-  var pesquisaNome = document.getElementById('pesquisar').value;
+  var pesquisaNome = document.getElementById('pesquisar').value.toLowerCase();
 
   if (pesquisaNome.length === 0) {
       alert('Nenhum nome foi digitado na pesquisa');
   } else {
       for (var i = 0; i < listaDoadores.length; i++) {
-          if (listaDoadores[i].name === pesquisaNome) {
-              openPopup(listaDoadores[i]);
+          if (listaDoadores[i].name.toLowerCase() == pesquisaNome) {
+              popup(listaDoadores[i]);
               document.getElementById('pesquisar').value = '';
               return listaDoadores[i];
           }
@@ -129,18 +135,19 @@ function pesquisar() {
   }
 }
 
-function openPopup(doador) {
-  var popupWindow = window.open('', 'Pop-up', 'width=400,height=300');
-  var popupDocument = popupWindow.document;
+function popup(doador) {
+  var popup = window.open('', 'Pop-up', 'width=400,height=300');
+  var info = popup.document;
 
-  popupDocument.write(`
+  info.write(`
       <h1>Informações do Doador</h1>
       <p><strong>Nome:</strong> ${doador.name}</p>
       <p><strong>Email:</strong> ${doador.email}</p>
+      <p><strong>ONG:</strong> ${doador.ong}</p>
       
       <button onclick="window.close()">Fechar</button>
   `);
-  popupDocument.body.style.padding = '20px';
+  info.body.style.padding = '20px';
 }
 
 
