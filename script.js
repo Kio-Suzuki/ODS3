@@ -110,6 +110,39 @@ function deleteAll() {
   criarListaDoadores();
 }
 
+function pesquisar() {
+  var pesquisaNome = document.getElementById('pesquisar').value;
+
+  if (pesquisaNome.length === 0) {
+      alert('Nenhum nome foi digitado na pesquisa');
+  } else {
+      for (var i = 0; i < listaDoadores.length; i++) {
+          if (listaDoadores[i].name === pesquisaNome) {
+              openPopup(listaDoadores[i]);
+              document.getElementById('pesquisar').value = '';
+              return listaDoadores[i];
+          }
+      }
+      alert('Não encontrado');
+      document.getElementById('pesquisar').value = '';
+      return null;
+  }
+}
+
+function openPopup(doador) {
+  var popupWindow = window.open('', 'Pop-up', 'width=400,height=300');
+  var popupDocument = popupWindow.document;
+
+  popupDocument.write(`
+      <h1>Informações do Doador</h1>
+      <p><strong>Nome:</strong> ${doador.name}</p>
+      <p><strong>Email:</strong> ${doador.email}</p>
+      
+      <button onclick="window.close()">Fechar</button>
+  `);
+  popupDocument.body.style.padding = '20px';
+}
+
 
 
 

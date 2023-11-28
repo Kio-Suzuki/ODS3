@@ -89,8 +89,8 @@
                         <input type="radio" id="ong1" name="ong" value="Núcleo Batuíra">
                         <label for="ong1">Núcleo Batuíra</label><br>
                         
-                        <input type="radio" id="ong2" name="ong" value="Lar dos Vovôs e Vovózinhas">
-                        <label for="ong2">Lar dos Vovôss e Vovózinhas</label><br>
+                        <input type="radio" id="ong2" name="ong" value="Lar dos Vovôs e Vovozinhas">
+                        <label for="ong2">Lar dos Vovôs e Vovozinhas</label><br>
                         
                         <input type="radio" id="ong3" name="ong" value="Grupo Orar">
                         <label for="ong3">Grupo Orar</label><br><br>
@@ -112,10 +112,20 @@
         </div>
 
         <div class="item3">
-            <h2>Últimos Doadores</h2>
-            <ul id="listaDoadores"></ul>
             
-            <span class="clearAll" type="button" onclick="deleteAll()">Excluir todos itens</span>
+            <div class="pesquisar">
+                <input type="text" id="pesquisar" placeholder="Pesquisar doadores...">
+                <span onclick="pesquisar()" class="btnpesquisar"><img src="img/search.svg" width="18" alt="Instagram"></span>
+            </div>
+
+            <div class="item4">
+                <h2>Últimos Doadores</h2>
+                <ul id="listaDoadores"></ul>
+            
+                <span class="clearAll" type="button" onclick="deleteAll()">Excluir todos itens</span>
+            </div>
+
+            
         </div>
 
     </div>

@@ -101,7 +101,6 @@ header a:hover {
     height: 100%;
     background: white;
     box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.2);
-    
 }
 
 .stretch {
@@ -118,7 +117,7 @@ header a:hover {
 }
 
 .item2 {
-    padding: 15px;
+    padding: 12px;
 	flex: 1;
     margin: 2px;
 	color: black;
@@ -136,7 +135,7 @@ header a:hover {
 }
 
 input[type="text"],input[type="number"],input[type="email"], input[type="date"]{
-    width: 100%;
+    width: 95%;
     padding: 5px;
     margin-bottom: 10px;
 }
@@ -154,9 +153,8 @@ button[type='submit']{
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
     padding: 10px 20px;
-    background-color: #4c9f38;
+    background-color: #d9d9d9;
     border: none;
-    border-radius: 25px;
     cursor: pointer;
     size: 20px;
     display: block;
@@ -164,8 +162,7 @@ button[type='submit']{
 }
 
 button[type='submit']:hover{
-    background-color: #06d1c7;
-    color: white;
+    background-color: #05db3b;
 }
 
 .item3 ul {
@@ -181,7 +178,7 @@ button[type='submit']:hover{
 
 .delete-button {
     padding: 1px;
-    width: 10%;
+    width: 5%;
     background: #d9d9d9;
     color: #555;
     text-align: center;
@@ -189,6 +186,11 @@ button[type='submit']:hover{
     cursor: pointer;
     transition: 0.3s;
     border-radius: 0;
+    float: right;
+}
+
+.delete-button:hover {
+    background: #05db3b;
 }
 
 .clearAll {
@@ -211,5 +213,46 @@ button[type='submit']:hover{
 
 .delete-button {
     margin-left: 10px; 
+}
+
+.item4 {
+    padding-top: 20px;
+}
+
+.pesquisar {
+    padding: 15px;
+    margin: 2px;
+	color: black;
+	text-align: left;
+	font-size: 15px;  
+    display:inline-flex; 
+}
+.btnpesquisar {
+    padding: 5px;
+    width: auto;
+    height: 20px;
+    background: #d9d9d9;
+    color: #555;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+}
+
+.btnpesquisar:hover {
+    background: #05db3b;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
