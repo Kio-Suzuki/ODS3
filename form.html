@@ -68,50 +68,75 @@
                     <label for="doacao2">Alimento Não Perecível</label><br>
                 </div>
 
+                <form id="doacao">
+                    <label for="nameInput">Nome</label>
+                    <input id="nameInput" name="fname" type="text" style="width: 100%">  
+                    
+                    <label for="cpfInput">CPF</label>
+                    <input id="cpfInput" name="cpf" type="text" style="width: 100%">
+
+                    <label for="emailInput">e-mail</label>
+                    <input id="emailInput" name="email" type="email" style="width: 100%">
+
+                    <label for="dataInput">Data de nascimento</label>
+                    <input id="dataInput" name="data" type="date" style="width: 100%">
+
+                    <label for="cepInput">CEP</label>
+                    <input id="cepInput" name="cep" type="number" style="width: 100%">
+
+                    <label for="ruaInput">Rua</label>
+                    <input id="ruaInput" name="rua" type="text" style="width: 100%">
+
+                    <label for="numeroInput">Número</label>
+                    <input id="numeroInput" name="numero" type="number" style="width: 100%">
+
+                    <label for="complementoInput">Complemento</label>
+                    <input id="complementoInput" name="complemento" type="text" style="width: 100%">
+
+                    <label for="bairroInput">Bairro</label>
+                    <input id="bairroInput" name="bairro" type="text" style="width: 100%">
+
+                    <label for="cidadeInput">Cidade</label>
+                    <input id="cidadeInput" name="cidade" type="text" style="width: 100%">
+
+                    <label for="estadoInput">Estado</label>
+                    <input id="estadoInput" name="estado" type="text" style="width: 100%">
+                </form>
+
                 <div class="input-container name">
-                    <label for="name">nome</label>
-                    <input id="name" name="fname" type="text" style="width: 100%">
+                    
                 </div>
                 <div class="input-container cpf">
-                    <label for="cpf">cpf</label>
-                    <input id="cpf" name="cpf" type="text" style="width: 100%">
+                    
                 </div>
                 <div class="input-container email">
-                    <label for="email">e-mail</label>
-                    <input id="email" name="email" type="email" style="width: 100%">
+                    
                 </div>
                 <div class="input-container data">
-                    <label for="data">data de nascimento</label>
-                    <input id="data" name="data" type="date" style="width: 100%">
+                    
                 </div>
                 <div class="input-container cep">
-                    <label for="cep">cep</label>
-                    <input id="cep" name="cep" type="number" style="width: 100%">
+                    
                 </div>
                 <div class="input-container rua">
-                    <label for="rua">rua</label>
-                    <input id="rua" name="rua" type="text" style="width: 100%">
+                    
                 </div>
                 <div class="input-container numero">
-                    <label for="numero">número</label>
-                    <input id="numero" name="numero" type="number" style="width: 100%">
+                    
                 </div>
                 <div class="input-container complemento">
-                    <label for="complemento">complemento</label>
-                    <input id="complemento" name="complemento" type="text" style="width: 100%">
-                </div>
-                <div class="estado">
-                    <label for="estado">Estado</label>
-                    <input id="estado" name="estado" type="text" style="width: 100%">
+                    
                 </div>
                 <div class="bairro">
-                    <label for="bairro">bairro</label>
-                    <input id="bairro" name="bairro" type="text" style="width: 100%">
+                    
                 </div>
                 <div class="cidade">
-                    <label for="cidade">cidade</label>
-                    <input id="cidade" name="cidade" type="text" style="width: 100%">
+                    
                 </div>
+                <div class="estado">
+                    
+                </div>
+                
                 <img src="/img/painel1-foto3(1).png" alt="Imagem representativa de cartão de crédito">
                 <div class="numeroCartao">
                     <label for="numeroCartao">número do cartão</label>
@@ -163,14 +188,23 @@
                     <input type="checkbox" name="size" id="notificacoes2">
                     <label for="notificacoes2">Aceito receber notificações sobre o <br> Conexão Solidária<br></label>
                 </div>
-                <button class="botao-doar">Doar</button>
+                <button onclick="addDoador()" class="botao-doar">Doar</button>
             </div>
         </div>
+    </section>
+
+    <section class="donate">
+        <h2>Últimos Doadores</h2>
+        <ul id="listaDoadores">
+            <li>Teste</li>
+            <li>Teste 2</li>
+        </ul>
     </section>
 
     <footer>
         © Conexão Solidária 2023 - Todos os direitos reservados
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
